@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/9dceff49a7.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+  <section class="header-home" id="home">
+    <header>
+    <!--menu-->
+        <div class="logo_link">
+            <a class="logo" href="index.html">DiagEnergy PACA</a>
+            <div class="menu_link">
+                <div class="dropdown">
+                    <a class="dropbtn">Diagnostics Vente<span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="obligationsVente.html">Obligations Vente</a></li>
+                        <li><a href="dpe.html">DPE</a></li>
+                        <li><a href="amiante.html">Amiante</a></li>
+                        <li><a href="plomb.html">Plomb</a></li>
+                        <li><a href="termites.html">Termites</a></li>
+                        <li><a href="gaz.html">Gaz</a></li>
+                        <li><a href="elec.html">Electricité</a></li>
+                        <li><a href="carrez.html">Loi Carrez</a></li>
+                        <li><a href="risques.html">Etat des Risques</a></li>
+                    </ul>
+                  </div>
+    
+                  <div class="dropdown">
+                    <a class="dropbtn">Diagnostics Location<span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="obligationsLocation.html">Obligations Location</a></li>
+                        <li><a href="dpe.html">DPE</a></li>
+                        <li><a href="amainte.html">Amiante</a></li>
+                        <li><a href="plomb.html">Plomb</a></li>
+                        <li><a href="termites.html">Termites</a></li>
+                        <li><a href="gaz.html">Gaz</a></li>
+                        <li><a href="elec.html">Electricité</a></li>
+                        <li><a href="carrez.html">Loi Carrez</a></li>
+                        <li><a href="risques.html">Etat des Risques</a></li>
+                        <li><a href="lieux.html">Etat des Lieux</a></li>
+                    </ul>
+                  </div>
+    
+                  <a class="dropbtn" href="audit.html">Audit Energétique</a>
+                  <a class="dropbtn" href="travaux.html">Avant Travaux / Démolition</a>
+                  
+    
+                  <div class="dropdown">
+                    <a class="dropbtn">Professionnels & Copropriétés<span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="dtg.html">DTG (Copopriétés)</a></li>
+                        <li><a href="lieux.html">Etats des lieux</a></li>
+                        <li><a href="dta.html">DTA</a></li>
+                    </ul>
+                  </div>
+                  <!-- <a class="dropbtn" href="tarifs.html">Tarifs</a> -->
+                  <a class="dropbtn" href="contacts.html">Contacts</a>
+                  <a class="dropbtn" href="faq.html">FAQ</a>
+           
+            </div>
+        </div>
+    
+    <!-- responsive menu -->
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">
+          <img src="photos/open.png">
+           Menu
+      </button>
+    </div>
+    
+    <div class="sidebar" id="mySidebar">
+        <div class="closebtn" onclick="closeNav()">
+            <img src="photos/close.png">
+        </div>
+    
+        <div class="sidebarAccordion">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                      <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Diagnostics Vente</span><span class="icon" aria-hidden="true"></span></button>
+                      <div class="accordion-content">
+                        <a href="obligationsVente.html" onclick="closeNav()">Obligations Vente</a>
+                        <a href="dpe.html" onclick="closeNav()">DPE</a>
+                        <a href="amiante.html" onclick="closeNav()">Amiante</a>
+                        <a href="plomb.html" onclick="closeNav()">Plomb</a>
+                        <a href="termites.html" onclick="closeNav()">Termites</a>
+                        <a href="gaz.html" onclick="closeNav()">Gaz</a>
+                        <a href="elec.html" onclick="closeNav()">Electricité</a>
+                        <a href="carrez.html" onclick="closeNav()">Loi Carrez</a>
+                        <a href="risques.html" onclick="closeNav()">Etats des risques</a>
+                        </div>
+                    </div>
+    
+                    <div class="accordion">
+                        <div class="accordion-item">
+                      <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Diagnostics Location</span><span class="icon" aria-hidden="true"></span></button>
+                      <div class="accordion-content">
+                        <a href="obligationsLocation.html" onclick="closeNav()">Obligations Location</a>
+                        <a href="dpe.html" onclick="closeNav()">DPE</a>
+                        <a href="amiante.html" onclick="closeNav()">Amiante</a>
+                        <a href="plomb.html" onclick="closeNav()">Plomb</a>
+                        <a href="termites.html" onclick="closeNav()">Termites</a>
+                        <a href="gaz.html" onclick="closeNav()">Gaz</a>
+                        <a href="elec.html" onclick="closeNav()">Electricité</a>
+                        <a href="carrez.html" onclick="closeNav()">Loi Carrez</a>
+                        <a href="risques.html" onclick="closeNav()">Etats des risques</a>
+                        <a href="lieux.html" onclick="closeNav()">Etats des lieux</a>
+                        </div>
+                    </div>
+    
+                    <a href="audit.html">Audit Energétique</a>
+                    <a href="travaux.html">Avant Travaux / Démolition</a>
+    
+                    <div class="accordion">
+                        <div class="accordion-item">
+                      <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Professionnels & Copropriétés</span><span class="icon" aria-hidden="true"></span></button>
+                      <div class="accordion-content">
+                        <a href="dtg.html" onclick="closeNav()">DTG (copropriété)</a>
+                        <a href="lieux.html" onclick="closeNav()">Etats des lieux</a>
+                        <a href="dta.html" onclick="closeNav()">DTA</a>
+                        </div>
+                    </div>
+    
+                    <!-- <a href="tarifs.html">Tarifs</a> -->
+    
+                    <a href="contacts.html">Contacts</a>
+    
+                    <a href="faq.html">FAQ</a>
+                </div>
+    
+    </div>
+    
+    <!-- responsive menu -->
+    
+    </header>
+        <!-- responsive menu -->
+<!-- scrolltop -->
+<div id="scroll_to_top">
+  <a href="#top"><img src="photos/scrolltop.png"/></a>
+</div>
+<!-- scrolltop -->
+
+<section class="tarifs" id="tarifs">
+    <section>
+        <div class="containerTarifs">
+            <h1>Tarifs</h1>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Diagnostics Ventes</span><span class="icon1" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <table class="containerPrice">
+                    <thead>
+                      <tr>
+                        <h2>Appartements</h2>
+                        <th><h1>Diagnostics Vente appartement</h1></th>
+                        <th><h1>Studio</h1></th>
+                        <th><h1>2 pièces</h1></th>
+                        <th><h1>3 pièces</h1></th>
+                        <th><h1>4 pièces</h1></th>
+                        <th><h1>5 pièces</h1></th>
+                        <th><h1>> 5 pièces</h1></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                      <tr>
+                        <td class="titleTd">Forfait Vente hors Plomb</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Forfait Vente avec Plomb</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">DPE</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Plomb</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Amiante</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Termites</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Gaz</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Electricité</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Etat des risques et pollutions (ERP)</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Mesures Carrez / Boutin</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                    </tbody>
+                  </table>
+    
+                  <table class="containerPrice">
+                    <thead>
+                      <tr>
+                        <h2>Maisons</h2>
+                        <th><h1>Diagnostics Vente maison</h1></th>
+                        <th><h1>Studio</h1></th>
+                        <th><h1>2 pièces</h1></th>
+                        <th><h1>3 pièces</h1></th>
+                        <th><h1>4 pièces</h1></th>
+                        <th><h1>5 pièces</h1></th>
+                        <th><h1>> 5 pièces</h1></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                      <tr>
+                        <td class="titleTd">Forfait Vente hors Plomb</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Forfait Vente avec Plomb</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">DPE</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Plomb</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Amiante</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Termites</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Gaz</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Electricité</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Etat des risques et pollutions (ERP)</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Mesures Carrez / Boutin</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Diagnostics Locations</span><span class="icon1" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <table class="containerPrice">
+                    <thead>
+                      <tr>
+                        <h2>Appartements</h2>
+                        <th><h1>Prestations Locations</h1></th>
+                        <th><h1>Studio</h1></th>
+                        <th><h1>2 pièces</h1></th>
+                        <th><h1>3 pièces</h1></th>
+                        <th><h1>4 pièces</h1></th>
+                        <th><h1>5 pièces</h1></th>
+                        <th><h1>> 5 pièces</h1></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                      <tr>
+                        <td class="titleTd">Forfait Vente hors Plomb</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Forfait Vente avec Plomb</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">DPE</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Plomb</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Amiante</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Termites</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Gaz</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Electricité</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Etat des risques et pollutions (ERP)</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Mesures Carrez / Boutin</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                    </tbody>
+                  </table>
+    
+                  <table class="containerPrice">
+                    <thead>
+                      <tr>
+                        <h2>Maisons</h2>
+                        <th><h1>Prestations Locations</h1></th>
+                        <th><h1>Studio</h1></th>
+                        <th><h1>2 pièces</h1></th>
+                        <th><h1>3 pièces</h1></th>
+                        <th><h1>4 pièces</h1></th>
+                        <th><h1>5 pièces</h1></th>
+                        <th><h1>> 5 pièces</h1></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                      <tr>
+                        <td class="titleTd">Forfait Vente hors Plomb</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Forfait Vente avec Plomb</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">DPE</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Plomb</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Amiante</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Termites</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Gaz</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Electricité</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Etat des risques et pollutions (ERP)</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                      <tr>
+                        <td class="titleTd">Mesures Carrez / Boutin</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>€</td>
+                        <td>Sur devis</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Audits</span><span class="icon1" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Etats des Lieux</span><span class="icon1" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+</section>
+    <!-- footer -->
+<footer class="footer2">
+    <div class="footer-content">
+        <h1>DiagEnergy PACA</h1>
+        <h4>@Mentions légales</h4> <br>
+    </div>
+
+<div class="footer-bottom">
+    <p>copyright &copy;2023 Me Dev. Designed by <span>Me</span></p>
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

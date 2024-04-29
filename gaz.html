@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostic Immobilier Energétique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/9dceff49a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class="header-home" id="home">
+        <header>
+        <!--menu-->
+            <div class="logo_link">
+                <a class="logo" href="index.html">DiagEnergy PACA</a>
+                <div class="menu_link">
+                    <div class="dropdown">
+                        <a class="dropbtn">Diagnostics Vente<span class="arrow">&#9662;</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="obligationsVente.html">Obligations Vente</a></li>
+                            <li><a href="dpe.html">DPE</a></li>
+                            <li><a href="amiante.html">Amiante</a></li>
+                            <li><a href="plomb.html">Plomb</a></li>
+                            <li><a href="termites.html">Termites</a></li>
+                            <li><a href="gaz.html">Gaz</a></li>
+                            <li><a href="elec.html">Electricité</a></li>
+                            <li><a href="carrez.html">Loi Carrez</a></li>
+                            <li><a href="risques.html">Etat des Risques</a></li>
+                        </ul>
+                      </div>
+        
+                      <div class="dropdown">
+                        <a class="dropbtn">Diagnostics Location<span class="arrow">&#9662;</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="obligationsLocation.html">Obligations Location</a></li>
+                            <li><a href="dpe.html">DPE</a></li>
+                            <li><a href="amiante.html">Amiante</a></li>
+                            <li><a href="plomb.html">Plomb</a></li>
+                            <li><a href="termites.html">Termites</a></li>
+                            <li><a href="gaz.html">Gaz</a></li>
+                            <li><a href="elec.html">Electricité</a></li>
+                            <li><a href="carrez.html">Loi Carrez</a></li>
+                            <li><a href="risques.html">Etat des Risques</a></li>
+                        </ul>
+                      </div>
+        
+                      <a class="dropbtn" href="audit.html">Audit Energétique</a>
+                     
+                      
+        
+                      <div class="dropdown">
+                        <a class="dropbtn">Professionnels & Copropriétés<span class="arrow">&#9662;</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="travaux.html">Avant Travaux / Démolition</a></li>
+                            <li><a href="dtg.html">DTG (Copopriétés)</a></li>
+                            <li><a href="lieux.html">Etats des lieux</a></li>
+                            <li><a href="dta.html">DTA</a></li>
+                        </ul>
+                      </div>
+
+                      <!-- <a class="dropbtn" href="tarifs.html">Tarifs</a> -->
+                      <a class="dropbtn" href="contacts.html">Contacts</a>
+                      <a class="dropbtn" href="faq.html">FAQ</a>
+               
+                </div>
+            </div>
+        
+        <!-- responsive menu -->
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">
+              <img src="photos/open.png">
+               Menu
+          </button>
+        </div>
+        
+        <div class="sidebar" id="mySidebar">
+            <div class="closebtn" onclick="closeNav()">
+                <img src="photos/close.png">
+            </div>
+        
+            <div class="sidebarAccordion">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                          <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Diagnostics Vente</span><span class="icon" aria-hidden="true"></span></button>
+                          <div class="accordion-content">
+                            <a href="obligationsVente.html" onclick="closeNav()">Obligations Vente</a>
+                            <a href="dpe.html" onclick="closeNav()">DPE</a>
+                            <a href="amiante.html" onclick="closeNav()">Amiante</a>
+                            <a href="plomb.html" onclick="closeNav()">Plomb</a>
+                            <a href="termites.html" onclick="closeNav()">Termites</a>
+                            <a href="gaz.html" onclick="closeNav()">Gaz</a>
+                            <a href="elec.html" onclick="closeNav()">Electricité</a>
+                            <a href="carrez.html" onclick="closeNav()">Loi Carrez</a>
+                            <a href="risques.html" onclick="closeNav()">Etats des risques</a>
+                            </div>
+                        </div>
+        
+                        <div class="accordion">
+                            <div class="accordion-item">
+                          <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Diagnostics Location</span><span class="icon" aria-hidden="true"></span></button>
+                          <div class="accordion-content">
+                            <a href="obligationsLocation.html" onclick="closeNav()">Obligations Location</a>
+                            <a href="dpe.html" onclick="closeNav()">DPE</a>
+                            <a href="amiante.html" onclick="closeNav()">Amiante</a>
+                            <a href="plomb.html" onclick="closeNav()">Plomb</a>
+                            <a href="termites.html" onclick="closeNav()">Termites</a>
+                            <a href="gaz.html" onclick="closeNav()">Gaz</a>
+                            <a href="elec.html" onclick="closeNav()">Electricité</a>
+                            <a href="carrez.html" onclick="closeNav()">Loi Carrez</a>
+                            <a href="risques.html" onclick="closeNav()">Etats des risques</a>
+                            </div>
+                        </div>
+        
+                        <a href="audit.html">Audit Energétique</a>
+                       
+        
+                        <div class="accordion">
+                            <div class="accordion-item">
+                          <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Professionnels & Copropriétés</span><span class="icon" aria-hidden="true"></span></button>
+                          <div class="accordion-content">
+                            <a href="travaux.html" onclick="closeNav()">Avant Travaux / Démolition</a>
+                            <a href="dtg.html" onclick="closeNav()">DTG (copropriété)</a>
+                            <a href="lieux.html" onclick="closeNav()">Etats des lieux</a>
+                            <a href="dta.html" onclick="closeNav()">DTA</a>
+                            </div>
+                        </div>
+        
+                        <!-- <a href="tarifs.html">Tarifs</a> -->
+        
+                        <a href="contacts.html">Contacts</a>
+        
+                        <a href="faq.html">FAQ</a>
+                    </div>
+        
+        </div>
+        
+        <!-- responsive menu -->
+        
+        </header>
+        
+<!--menu-->
+
+<!-- scrolltop -->
+<div id="scroll_to_top">
+    <a href="#top"><img src="photos/scrolltop.png"/></a>
+</div>
+<!-- scrolltop -->
+
+<!-- home -->
+<div class="homeDescription">
+<section class="home">
+<div class="left">
+    <h2>Diagnostic Gaz</h2>
+    <p>L'état de l'installation intérieure de gaz, aussi appelé diagnostic gaz, est un diagnostic qui donne un aperçu de la sécurité des installations de gaz dans les logements.<br>
+         Le diagnostic permet d’évaluer les risques pouvant porter atteinte à la sécurité des occupants d’un 
+         logement au niveau des équipements fonctionnant au gaz (chaudière, cuisinière, chauffe-eau...).<br>
+         Un contrôle des ventilations est également effectué.<br>
+         Votre logement est concerné si l'installation de gaz a plus de 15 ans. <br>
+         Le diagnostic doit être intégré au dossier de diagnostic technique (DDT) qui doit être remis à l'acquéreur ou au locataire en cas de vente ou location d'un logement.<br><br>
+          Le diagnostic gaz est valable 3 ans dans le cadre d’une vente immobilière et 6 ans pour la mise en location 
+d’un bien.
+ 
+</div>
+<div class="right">
+    <img src="photos/gaz.png">
+</div>
+</div>
+
+</section>
+<!-- home -->
+</section>
+
+
+
+<!-- footer -->
+<footer>
+    <div class="footer-content">
+        <h1>DiagEnergy PACA</h1>
+        <h4>@Mentions légales</h4> <br>
+    </div>
+
+<div class="footer-bottom">
+    <p>copyright &copy;2023 Me Dev. Designed by <span>Me</span></p>
+</div>
+</footer>
+<!-- footer -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
